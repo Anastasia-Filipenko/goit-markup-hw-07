@@ -23,16 +23,7 @@
     &__card:last-child {
     margin-right: 0;
 }
-    &-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
 
-    transition: background-color var(--duration) var(--timing-function), border-radius var(--duration) var(--timing-function);
-}
 
 }
 
@@ -57,14 +48,22 @@
     &__list {
     display: flex;
     align-items: center;
-
     justify-content: center;
 }
 
     &__list li:not(:last-child) {
     margin-right: 10px;
 }
-
+        &__link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+    
+            transition: background-color var(--duration) var(--timing-function), border-radius var(--duration) var(--timing-function);
+        }
     &__link:hover,
     &__link:focus,
     &__link:active {
